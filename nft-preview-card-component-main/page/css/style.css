@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Hanken+Grotesk:wght@500;700;800&family=Lato:wght@300&family=Montserrat:wght@500;700&family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(217, 54%, 11%);
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+  width: 100%;
+  height: calc(100vh - 1px);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5rem;
+}
+
+.container-width {
+  background: hsl(216, 50%, 16%);
+  width: 365px;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.image {
+  position: relative;
+  height: 300px;
+}
+.image__mainimage {
+  width: 100%;
+  border-radius: 0.7rem;
+}
+.image__mainimage:hover {
+  cursor: pointer;
+}
+.image__view {
+  margin: 130px 135px;
+}
+.image__overlay {
+  position: absolute;
+  width: 100%;
+  height: 310px;
+  top: 0;
+  left: 0;
+  border-radius: 0.7rem;
+  background-color: hsl(178, 100%, 50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.image__overlay:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.about__h1 {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 2rem 0 1rem 0;
+}
+.about__h1:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+.about__p {
+  font-size: 18px;
+  color: hsl(215, 51%, 70%);
+  font-weight: 400;
+  padding: 0 0 1rem 0;
+}
+.about__details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 17px;
+}
+.about__icons {
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0 0.3rem 0 0;
+}
+.about__price {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+  display: flex;
+}
+.about__days {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  display: flex;
+}
+.about::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: hsl(215, 32%, 27%);
+  margin: 1rem 0 1rem 0;
+}
+
+.who {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 16px;
+  font-weight: 300;
+}
+.who__author {
+  color: hsl(215, 51%, 70%);
+}
+.who__pic {
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  width: 40px;
+  margin: 0 0.5rem 0 0;
+}
+.who__name:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}/*# sourceMappingURL=style.css.map */
